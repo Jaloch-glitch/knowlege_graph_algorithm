@@ -39,7 +39,7 @@ class Graph(abc.ABC):
 # the row and the column numbers.
 # Weighted graphs can hold values > 1 in the matrix cells
 # A value of 0 in the cell indicates that thre is no edge
-# 
+
 ########################################################################
 class AdjacencyMatrixGraph(Graph):
     def __init__(self, numVertices, directed=False):
