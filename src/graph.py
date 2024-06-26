@@ -88,19 +88,19 @@ class AdjacencyMatrixGraph(Graph):
             for v in self.get_adjacent_vertices(i):
                 print(i, "-->", v)
 
-g = AdjacencyMatrixGraph(4)
+g = AdjacencyMatrixGraph(8)
 
 g.add_edge(0,1)
 g.add_edge(0,2)
 g.add_edge(2,3)
 
-for i in range(4):
+for i in range(6):
     print("Adjacent to: ", i, g.get_adjacent_vertices(i))
 
-for i in range(4):
+for i in range(6):
     print("Indegree: ", i, g.get_indegree(i))
 
-for i in range(4):
+for i in range(6):
     for j in g.get_adjacent_vertices(i):
         print("Edge weight: ", i, " ", "weight: ", g.get_edge_weight(i,j))
 
